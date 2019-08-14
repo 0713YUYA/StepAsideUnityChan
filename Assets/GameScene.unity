@@ -385,7 +385,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1976243761
+  randomSeed: 1367930238
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3971,7 +3971,6 @@ GameObject:
   - component: {fileID: 559121120}
   - component: {fileID: 559121119}
   - component: {fileID: 559121123}
-  - component: {fileID: 559121124}
   m_Layer: 0
   m_Name: partitionWall
   m_TagString: GoalTag
@@ -4056,19 +4055,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f571ecd418c4b32897120a9320228c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &559121124
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 559121118}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.0000038146973, z: 0}
 --- !u!1 &593125016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4930,19 +4916,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.880004, y: 0.38574144, z: 504.00024}
   m_Center: {x: -0.00000047683716, y: 0.8, z: 0.000030517578}
---- !u!136 &1787460365
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1787460360}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 252.00012
-  m_Height: 0.38574144
-  m_Direction: 1
-  m_Center: {x: -0.00000047683716, y: 0, z: 0.000030517578}
 --- !u!1 &1857547145
 GameObject:
   m_ObjectHideFlags: 0
