@@ -64,7 +64,7 @@ public class UnityChanController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (this.isEnd);
+		Debug.Log (this.transform.position.y);
 		//ゲーム終了ならUnityちゃんの動きが減哀（追加4）
 		if (this.isEnd) {
 			this.forwardForce *= this.coefficient;
@@ -91,13 +91,16 @@ public class UnityChanController : MonoBehaviour {
 		//Jumpステートの場合はJumpにfalseをセットする（追加3）
 		if (this.myAnimator.GetCurrentAnimatorStateInfo (0).IsName ("Jump")) {
 			this.myAnimator.SetBool ("Jump", false);
+
 		}
 		//ジャンプしていない時にスペースが押されたらジャンプする（追加3）
 		if (Input.GetKeyDown (KeyCode.Space) && this.transform.position.y < 0.5f) {
+			
 			//ジャンプアニメを再生（追加3）
 			this.myAnimator.SetBool ("Jump", true);
 			//Unityちゃんに上方向の力を加える（追加3）
-			this.myRigidbody.AddForce (this.transform.up * upForce);
+			this.myRigidbody.AddForce (this.transform.up * this.upForce);
+
 		}
 	}
 	//トリガーモードで他のオブジェクトと接触した場合の処理（追加４）
@@ -134,8 +137,8 @@ public class UnityChanController : MonoBehaviour {
 		}
 	}
 		//ジャンプボタンを押した場合の処理（追加10）
-				public  void GetMyJumpButtonDown() {
-				
+		public  void GetMyJumpButtonDown() {
+		        
 		if (this.transform.position.y < 0.5f) {
 					
 			this.myAnimator.SetBool ("Jump", true);
