@@ -9,23 +9,24 @@ public class DestroyController : MonoBehaviour {
 	private float difference;
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
 
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
 	
 	}
 	//仕切り壁とコインが当たった際に画面外のコインを破棄する（課題）
-	void OnCollisionEnter (Collision other)
+	void OnTriggerEnter (Collider other)
 	{
-		Debug.Log (gameObject);
-		if(other.gameObject.tag == "Coin")
+		
+		if(other.gameObject.CompareTag ("CoinTag"))
 		{
 			Destroy (other.gameObject);
+			Debug.Log ("接触");
 		}
 	 }
   }

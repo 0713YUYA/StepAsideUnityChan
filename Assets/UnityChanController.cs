@@ -64,7 +64,7 @@ public class UnityChanController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (this.transform.position.y);
+		
 		//ゲーム終了ならUnityちゃんの動きが減哀（追加4）
 		if (this.isEnd) {
 			this.forwardForce *= this.coefficient;
