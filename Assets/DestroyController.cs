@@ -26,7 +26,16 @@ public class DestroyController : MonoBehaviour {
 		if(other.gameObject.CompareTag ("CoinTag"))
 		{
 			Destroy (other.gameObject);
+		}
+		if (other.gameObject.CompareTag ("CarTag"))
+		{
+			Destroy (other.gameObject);
+		}
+		if (other.gameObject.CompareTag ("TrafficConeTag"))
+		{
+			Destroy (other.gameObject);
 			Debug.Log ("接触");
 		}
+
 	 }
   }
